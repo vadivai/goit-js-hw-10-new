@@ -20,7 +20,8 @@ function onInputCountry(event) {
     const inputCountryValue = event.target.value.trim();
 
     if (inputCountryValue === '') {
-        return
+        countryList.innerHTML = '';
+        return;
     }
 
 // ошибку 404 обработали в fetchCountries?
